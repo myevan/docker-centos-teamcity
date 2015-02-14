@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-env
 export JAVA_HOME=/usr/java/default
 AGENT_DIR="${HOME}/agent"
 
