@@ -11,13 +11,11 @@ Usage
 
 #### Build
 
-	$ sudo docker build --tag centos-teamcity .
+	$ ./build.sh 
 
 #### Start
 
-	$ sudo mkdir -p ~/data/teamcity
-	$ sudo chcon -Rt svirt_sandbox_file_t ~/data/teamcity
-	$ sudo docker run -dt --name teamcity -p 8111:8111 -v ~/data/teamcity:/data/teamcity centos-teamcity
+	$ ./start.sh
 
 #### Clean 
 
