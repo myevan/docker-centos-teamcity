@@ -8,7 +8,7 @@ RUN rpm -Uvh jre-8u31-linux-x64.rpm
 RUN rm -rf jre-8u31-linux-x64.rpm
 
 RUN yum -y install tar
-RUN wget -qO- http://download.jetbrains.com/teamcity/TeamCity-9.0.2.tar.gz | tar xz -C /opt
+RUN wget -qO- http://download.jetbrains.com/teamcity/TeamCity-9.0.3.tar.gz | tar xz -C /opt
 
 VOLUME  ["/data/teamcity"]
 ENV TEAMCITY_DATA_PATH /data/teamcity
